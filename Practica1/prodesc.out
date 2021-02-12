@@ -1,0 +1,7 @@
+ El tamaño de los vectores es: 
+ El vector a es:
+ a = {   1.00000000       2.00000000       3.00000000       4.00000000     }
+ El vector b es:
+ b = {   0.00000000      -2.00000000       0.00000000      -4.00000000     }
+  a*b (funcion dot_product) =  -20.00000
+       a*b (por definicion) =  -20.00000
