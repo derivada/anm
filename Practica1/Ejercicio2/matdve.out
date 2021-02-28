@@ -1,0 +1,13 @@
+ La longitud de la diagonal principal y del vector es: 
+   4
+ Introduzca la diagonal al:
+  0.3000E+01 -0.1000E+01  0.3000E+01
+ Introduzca la diagonal ad:
+  0.5000E+00  0.5000E+00  0.5000E+00  0.5000E+00
+ Introduzca la diagonal au:
+  0.3000E+01 -0.1000E+01  0.3000E+01
+ Introduzca el vector v: 
+ -0.6500E+01 -0.2000E+01  0.6000E+01  0.3500E+01
+
+ El vector producto w = Av es:
+ -0.9250E+01 -0.2650E+02  0.1550E+02  0.1975E+02

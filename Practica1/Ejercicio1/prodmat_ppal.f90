@@ -6,25 +6,29 @@ program prodmat_ppal
     implicit none
     
     real, allocatable :: a(:, :), b(:, :), c(: , :) ! las matrices a y b
-    integer :: n, m, i, j, k ! dimensiones de las matrices
+    integer :: n, m, p, i, j, k ! dimensiones de las matrices
 
     ! especificadores de formato para I/O
     character(len = 4)::formato1='(i4)' ! entero de 4 digitos
     character(len = 10)::formato2='(100e12.4)' ! hasta un máximo de 100 números reales con 12 espacios (cifras o espacio blanco) de las cuales 4 son decimales
 
 
-    print*, "El numero de filas es: "
+    print*, "El numero de filas de A es: "
     read formato1, n
     print formato1, n
 
-    print*, "El numero de columnas es: "
+    print*, "El numero de columnas de A y filas de B es: "
     read formato1, m
     print formato1, m
 
-    allocate(a(n,m), b(n,m), c(n,m))
+    print*, "El numero de columnas de B es: "
+    read formato1, p
+    print formato1, p
+
+    allocate(a(m,n), b(n,p), c(m,p))
 
     print*, "Introduzca la matriz a:"
-    do i = 1, n
+    do i = 1, m
         read *, a(i, :)
         print formato2, a(i, :)
     end do
@@ -36,8 +40,8 @@ program prodmat_ppal
     end do
 
     ! producto matricial (procedimiento propio)
-    do i = 1, n
-        do j = 1, m
+    do i = 1, m
+        do j = 1, p
             do k = 1, n
                 c(i,j) = c(i,j) + (a(i,k) * b(k,j))
             end do
@@ -45,13 +49,13 @@ program prodmat_ppal
     end do
 
     print *, "Producto matricial axb usando procedimiento propio: "
-    do i = 1, n
+    do i = 1, m
         print formato2, c(i, :)
     end do
     
     c = matmul(a,b)
     print *, "Producto matricial axb usando funcion MATMUL: "
-    do i = 1, n
+    do i = 1, m
         print formato2, c(i, :)
     end do
 

@@ -1,0 +1,14 @@
+ Las dimensiones nxm de la matriz A son: 
+   4   4
+ Introduzca la matriz A:
+  0.1000E+01  0.2000E+01  0.3000E+01  0.4000E+01
+  0.1000E+01  0.2000E+01  0.3000E+01  0.4000E+01
+  0.1000E+01  0.2000E+01  0.3000E+01  0.4000E+01
+  0.1000E+01  0.2000E+01  0.3000E+01  0.4000E+01
+ Introduzca el vector b:
+  0.5000E+01  0.6000E+01  0.7000E+01  0.8000E+01
+ Introduzca el vector u:
+  0.2000E+01  0.3000E+01  0.4000E+01  0.5000E+01
+
+ El vector residuo del sistema lineal Au = b (r = Au-b) es:
+  0.3500E+02  0.3400E+02  0.3300E+02  0.3200E+02
