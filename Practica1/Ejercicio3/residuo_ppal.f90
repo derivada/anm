@@ -6,14 +6,14 @@ program residuo_ppal
 
     ! Compilación con otras versiones de la subrutina: cambiar el número de residuo_sub.f90
     ! y descomentar el código de este programa principal para admitir r
-
+    use mod_clreal 
     implicit none
     
     ! especificadores de formato para I/O
     character(len = 10) :: dos_enteros = '(2i4)' ! 2 enteros de hasta 4 cifras
     character(len = 10):: floats = '(100e12.4)' ! Hasta 100 floats en notación científica con 4 decimales
 
-    real, allocatable :: a(:,:), b(:), u(:) ! La matriz A (mxn), los vectores b y u y el residuo a calcular r
+    real (kind=clreal), allocatable :: a(:,:), b(:), u(:) ! La matriz A (mxn), los vectores b y u y el residuo a calcular r
     !real, allocatable :: r(:) !Versiones 1 y 2 subrutina
 
     integer :: n, m ! Las dimensiones de A

@@ -3,11 +3,12 @@ subroutine residuo(m, n, a, b, u, r)
 ! Subrutina para calcular el residuo r = Au-b del sistema lineal Au = b
 ! Versión 1 - Transcripción a Fortran de las fórmulas matemáticas de forma simple
 
+use mod_clreal
 implicit none
 
 integer,intent(in) :: m, n
-real, intent(in) :: a(m,n), b(m), u(n)
-real, intent(out) :: r(m)
+real (kind = clreal), intent(in) :: a(m,n), b(m), u(n)
+real (kind = clreal), intent(out) :: r(m)
 
 integer :: i,j
 real :: aux

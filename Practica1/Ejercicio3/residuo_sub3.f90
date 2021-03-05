@@ -4,11 +4,12 @@ subroutine residuo(m, n, a, b, u)
 ! Versión 3 - Más eficiente en el tiempo de cálculo
 ! Se emiten además los vectores aux y r
 
+use mod_clreal 
 implicit none
 
 integer,intent(in) :: m, n
-real, intent(in) :: a(m,n),  u(n)
-real, intent(inout) :: b(m) ! El vector b se usa ahora también para almacenar el resultado
+real (kind=clreal) :: a(m,n),  u(n)
+real  (kind=clreal), intent(inout) :: b(m) ! El vector b se usa ahora también para almacenar el resultado
 
 integer :: j
 

@@ -1,0 +1,12 @@
+ Introduzca la dimensión de la matriz:
+   4
+ Introduzca la matriz triangular superior A (no hace falta meter los 0s):
+  0.1000E+01  0.2000E+01  0.3000E+01  0.4000E+01
+  0.0000E+00  0.1000E+01  0.2000E+01  0.3000E+01
+  0.0000E+00  0.0000E+00  0.1000E+01  0.2000E+01
+  0.0000E+00  0.0000E+00  0.0000E+00  0.1000E+01
+ Introduzca el vector de términos independientes b:
+  0.2000E+01  0.4000E+01  0.6000E+01  0.8000E+01
+
+ El resultado u del sistema Au = b es:
+  0.0000E+00  0.0000E+00 -0.1000E+02  0.8000E+01

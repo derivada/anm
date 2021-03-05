@@ -4,11 +4,12 @@ subroutine residuo(m, n, a, b, u, r)
 ! Versión 2 - Más eficiente en el tiempo de cálculo, ya que las operaciones se hacen
 ! sobre un bucle en las columnas de A
 
+use mod_clreal 
 implicit none
 
 integer,intent(in) :: m, n
-real, intent(in) :: a(m,n), b(m), u(n)
-real, intent(out) :: r(m)
+real (kind = clreal), intent(in) :: a(m,n), b(m), u(n)
+real (kind = clreal), intent(out) :: r(m)
 
 integer :: j
 real :: aux(m)
