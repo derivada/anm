@@ -10,3 +10,4 @@ en el cálculo y descomposición de **vectores** y **matrices**.
 1.  Práctica 1 - Ejercicios 1.1 hasta 1.3 (1.4 hecho después)
 2.  Práctica 2 - Ejercicios 2 y 3
 3.  Práctica 2 - Ejercicios 1.1 hasta 1.3
+4.  Práctica 2 - Ejercicios 1.4 hasta 1.6 y 2

@@ -1,7 +1,7 @@
-program sistu_ppal
+program sistl_ppal
     
-    ! compilacion: gfortran -o sistu.exe sistu_ppal.f90 sistu_sub.f90
-    ! ejecucion: .\sistu.exe < sistu.txt > sistu.out
+    ! compilacion: gfortran -o sistl.exe sistl_ppal.f90 sistl_sub.f90
+    ! ejecucion: .\sistl.exe < sistl.txt > sistl.out
 
     use mod_clreal 
     implicit none
@@ -22,16 +22,17 @@ program sistu_ppal
     
     allocate(a(n,n), b(n), u(n))
 
-    print *, "Introduzca la matriz triangular superior A (no hace falta meter los 0s):"
+    print *, "Introduzca la matriz triangular inferior A (no hace falta meter los 0s):"
 
     ! vamos a leer desde la diagonal hacia delante
+    ! ahora desde el 1 hasta el i
     do i = 1, n
-        read *, a(i, i:n)
+        read *, a(i, 1:i)
         if (abs(a(i,i)) < 1.e-12) then
             print *, 'Matriz singular no válida'
             stop
         end if
-        print floats, (0._clreal, j=1, i-1), a(i, i:n)  
+        print floats, a(i, 1:i), (0._clreal, j=i+1, n)
     end do
 
     print *, "Introduzca el vector de términos independientes b:"
@@ -39,7 +40,7 @@ program sistu_ppal
     print floats, b
 
     ! Llamada a la subrutina que resuelve el sistema triangular
-    call sistu_sub(n, a, b, u) 
+    call sistl_sub(n, a, b, u) 
 
     ! Impresión del resultado
     print *
@@ -48,4 +49,4 @@ program sistu_ppal
 
     deallocate(a, b, u)
 
-end program sistu_ppal
+end program sistl_ppal
