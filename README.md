@@ -11,3 +11,4 @@ en el cálculo y descomposición de **vectores** y **matrices**.
 2.  Práctica 2 - Ejercicios 2 y 3
 3.  Práctica 2 - Ejercicios 1.1 hasta 1.3
 4.  Práctica 2 - Ejercicios 1.4 hasta 1.6 y 2
+5.  Práctica 3 - Ejercicio 1.1 y comienzo 1.2
