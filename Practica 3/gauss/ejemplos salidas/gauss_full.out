@@ -1,0 +1,28 @@
+ --- Cálculo de la factorización A = LU y resolución de un sistema de ecuaciones lineales ---
+ El orden n de la matriz A es: 
+       3
+
+ Introduzca la matriz A: 
+  0.1000E+01  0.2000E+01  0.3000E+01
+  0.3000E+01  0.4000E+01  0.2000E+01
+  0.0000E+00  0.5000E+01  0.8000E+01
+
+ Introduzca el vector B: 
+  0.5000E+01  0.6000E+01  0.2000E+01
+
+ Determinante:    19.000000000000000     
+
+ La matriz triangular superior U es: 
+  0.1000E+01  0.2000E+01  0.3000E+01
+  0.0000E+00 -0.2000E+01 -0.7000E+01
+  0.0000E+00  0.0000E+00 -0.9500E+01
+
+ El término independiente transformado es: 
+  0.5000E+01 -0.9000E+01 -0.2050E+02
+
+ La solución del sistema es: 
+  0.4632E+01 -0.3053E+01  0.2158E+01
+
+ El residuo del sistema r = Au-b es: 
+  0.0000E+00  0.4768E-06  0.0000E+00
+

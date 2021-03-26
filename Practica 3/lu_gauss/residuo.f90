@@ -12,7 +12,7 @@ real (kind = clreal), intent(in) :: a(m,n), b(m), u(n)
 real (kind = clreal), intent(out) :: r(m)
 
 integer :: j
-real :: aux(m)
+real (kind = clreal):: aux(m)
 
 ! Aquí se usa de nuevo la sintaxis para referirse a varias filas o columnas de cada vector
 aux = 0. ! aux = (0, 0, 0...)

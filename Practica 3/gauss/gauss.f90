@@ -7,17 +7,16 @@ subroutine gauss(n, a, b, deter)
 
     real (kind = clreal), intent(inout) :: a(n, n)
     real (kind = clreal), intent(inout) :: b(n)
-
     real (kind = clreal), intent(out) :: deter
     real (kind = clreal) :: piv!, factor
 
     deter=1. ! Inicialización del determinante
-    print *, a(1, 1)
+
     ! Etapa k-ésima de eliminación
     do k = 1, n-1
         piv = a(k, k)
         if(abs(piv) < 1.e-12) then ! Si el pivote es nulo terminar
-            print *,'Pivote nulo en la etapa: ', k
+            print *, 'Pivote nulo en la etapa: ', k
             stop
         end if
 
@@ -42,7 +41,7 @@ subroutine gauss(n, a, b, deter)
 
     ! Comprobación de que el último pivote no es nulo
     if(abs(a(n, n)) < 1.e-12) then
-        print*,'Pivote nulo en la etapa: ',n
+        print*, 'Pivote nulo en la etapa: ', n
         stop
     end if
 

@@ -1,0 +1,13 @@
+ --- Cálculo de la factorización A = LU y resolución de un sistema de ecuaciones lineales ---
+ El orden n de la matriz A es: 
+       3
+
+ Introduzca la matriz A: 
+  0.2000E+01  0.3000E+01  0.4000E+01
+  0.5000E+01  0.6000E+01  0.7000E+01
+  0.7000E+01  0.9000E+01  0.1100E+02
+
+ Introduzca el vector B: 
+  0.4000E+01  0.1000E+01 -0.2000E+01
+
+ Pivote nulo en la etapa:            3
