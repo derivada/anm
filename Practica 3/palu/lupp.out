@@ -1,0 +1,32 @@
+ --- Cálculo de la factorización PA = LU y resolución de un sistema de ecuaciones lineales ---
+ El orden n de la matriz A es: 
+       3
+
+ Introduzca la matriz A: 
+  0.1000E+01  0.2000E+01  0.3000E+01
+  0.4000E+01  0.5000E+01  0.6000E+01
+  0.7000E+01  0.8000E+01 -0.1000E+02
+
+ Introduzca el vector B: 
+  0.4000E+01  0.2000E+01  0.7000E+01
+
+ Determinante:    56.999999999999986     
+
+ La matriz triangular inferior L es: 
+  0.1000E+01  0.0000E+00  0.0000E+00
+  0.1429E+00  0.1000E+01  0.0000E+00
+  0.5714E+00  0.5000E+00  0.1000E+01
+
+ La matriz triangular superior U es: 
+  0.7000E+01  0.8000E+01 -0.1000E+02
+  0.0000E+00  0.8571E+00  0.4429E+01
+  0.0000E+00  0.0000E+00  0.9500E+01
+ El vector ip es: 
+       3       1       2
+
+ La solución del sistema es: 
+ -0.5702E+01  0.5404E+01 -0.3684E+00
+
+ El residuo del sistema r = Ax-b es: 
+  0.0000E+00  0.1776E-14  0.3553E-14
+
