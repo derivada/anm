@@ -13,3 +13,6 @@ La asignatura consiste en usar el lenguaje de programación FORTRAN (90) para co
 5.  Práctica 3 - Ejercicio 1.1 y comienzo 1.2
 6.  Práctica 3 - Ejercicios 1.2, 1.3 y 2
 7.  Práctica 3 - Ejercicio 3
+8.  Práctica 4 - Ejercicio 1
+9.  Práctica 4 - Ejercicio 2
+10. Prácticas 5 y 6

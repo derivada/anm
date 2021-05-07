@@ -1,0 +1,45 @@
+ --- Cálculo de la factorización de Jacobi para la resolución iterative un S.E.L. ---
+ El orden n de la matriz A es: 
+       2
+
+ La matriz de coeficientes A es: 
+  0.1000E+02  0.1000E+01
+  0.2000E+01  0.1000E+02
+
+ El término independiente b es: 
+  0.3000E+01  0.4000E+01
+
+ El iterante inicial u es: 
+  0.0000E+00  0.0000E+00
+
+ El parámetro eps para el test de parada es:
+   9.9999999999999995E-007
+
+ El número máximo de iteracciones permitidas es: 
+     100
+
+   1|  0.3000E+00  0.4000E+00
+-------------------------------------
+   2|  0.2600E+00  0.3400E+00
+-------------------------------------
+   3|  0.2660E+00  0.3480E+00
+-------------------------------------
+   4|  0.2652E+00  0.3468E+00
+-------------------------------------
+   5|  0.2653E+00  0.3470E+00
+-------------------------------------
+   6|  0.2653E+00  0.3469E+00
+-------------------------------------
+   7|  0.2653E+00  0.3469E+00
+-------------------------------------
+   8|  0.2653E+00  0.3469E+00
+-------------------------------------
+
+ Test de parada activado en la iteración:            8
+
+ La solución aproximada del sistema es: 
+  0.2653E+00  0.3469E+00
+
+ El residuo del sistema r = Ax-b es: 
+ -0.4800E-06 -0.6400E-06
+

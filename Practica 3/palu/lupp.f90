@@ -41,6 +41,9 @@ subroutine lupp(n, a, ip, deter)
             ipk = ip(k)
         end if
 
+        print *, 'Vector ip en etapa k = ', k
+        print *, ip
+        
         deter = deter*piv ! Actualización del determinante
 
         ! Eliminación gaussiana

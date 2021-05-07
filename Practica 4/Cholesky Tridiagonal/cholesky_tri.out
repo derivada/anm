@@ -1,0 +1,25 @@
+ Cálculo de la factorización de Cholesky - Caso tridiagonal
+
+ Orden de A: 
+           3
+ Introduzca la diagonal principal ad:
+  0.1000E+01  0.1250E+01  0.1125E+02
+ Introduzca la subdiagonal as:
+ -0.5000E+00  0.1500E+01
+ Introduzca el vector b:
+ -0.5000E+00  0.1750E+01  0.1125E+02
+
+ En la factorización A=BBt
+ La diagonal principal de B es:
+  0.1000E+01  0.1000E+01  0.3000E+01
+ La subdiagonal de B es:
+ -0.5000E+00  0.1500E+01
+
+ El determinante de la matriz A es:
+   9.0000000000000000     
+
+ La solución es:
+ -0.5000E+00  0.0000E+00  0.1000E+01
+
+ El residuo del sistema, r = Au - b, es:
+  0.0000E+00  0.0000E+00  0.0000E+00
