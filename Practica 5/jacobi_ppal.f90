@@ -12,7 +12,7 @@ program jacobi_ppal
     integer :: nitmax
     ! Matriz A, vector B, iterante inicial u, vector de residuo r
     real(kind = clreal), allocatable :: a(:,:), b(:), u(:), r(:) 
-    real(kind = clreal) :: eps ! Test de parada
+    real(kind = clreal) :: eps, norm ! Test de parada y norma del residuo
 
     print *, '--- Cálculo de la factorización de Jacobi para la resolución iterative un S.E.L. ---'
     
@@ -31,13 +31,15 @@ program jacobi_ppal
     print floats, u
 
    
-    call residuo(n, n, a, b, u, r)
+    call residuo(n, n, a, b, u, r, norm)
 
     ! Escritura del residuo del sistema
     print*
     print*, 'El residuo del sistema r = Ax-b es: '
     print floats, r
     print*
+    print*, 'La norma 2 del residuo es: '
+    print floats, norm
 
     deallocate(a, b, u, r)
 end program

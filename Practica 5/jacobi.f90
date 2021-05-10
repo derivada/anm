@@ -36,9 +36,19 @@ subroutine jacobi(n, a, b, u, eps, nitmax)
             u(i) = (b(i) - sum(a(i, 1:i-1) * uold(1:i-1)) & ! el & es para escribir en 2 líneas una larga
             - sum(a(i, i+1:n) * uold(i+1:n))) / a(i, i)
         end do
+        
+        ! Test de error absoluto en norma infinito
+        ! error = maxval(abs(u-uold))
 
-        error = maxval(abs(u-uold))
+        ! Test de error absoluto en norma 1
+        error = 0.
+        do i = 1, n
+            error = error + abs(u(i) - uold(i))
+        end do
+
         print LINEA1, iter, u
+        print *,  'Diferencia en norma 1: ', error
+
         print LINEA2
         if(error < eps)then
             print*

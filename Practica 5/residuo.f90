@@ -1,4 +1,4 @@
-subroutine residuo(m, n, a, b, u, r)
+subroutine residuo(m, n, a, b, u, r, norm)
 
 ! Subrutina para calcular el residuo r = Au-b del sistema lineal Au = b
 ! Versión 2 - Más eficiente en el tiempo de cálculo, ya que las operaciones se hacen
@@ -9,8 +9,8 @@ implicit none
 
 integer,intent(in) :: m, n
 real (kind = clreal), intent(in) :: a(m,n), b(m), u(n)
-real (kind = clreal), intent(out) :: r(m)
-
+real (kind = clreal), intent(out) :: r(m), norm
+real (kind = clreal) :: sumsqr
 integer :: j
 real (kind = clreal):: aux(m)
 
@@ -22,5 +22,12 @@ do j = 1,n
 end do
 
 r = aux - b ! Resta de vectores
+norm = 0.
+sumsqr = 0.
+do j = 1, n
+    ! norma 2
+     sumsqr = sumsqr + r(j)**2
+end do
+norm = sqrt(sumsqr)
 
 end subroutine residuo

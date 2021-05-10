@@ -1,4 +1,4 @@
-subroutine residuosim(n,a,b,u,r)
+subroutine residuosim(n,a,b,u,r,norm)
     !Subrutina para el calculo del vector residuo
     
     use mod_clreal
@@ -8,10 +8,10 @@ subroutine residuosim(n,a,b,u,r)
     !Declaración de varibles
     integer,intent(in)::n
     real(kind=clreal),intent(in)::a(n,n),u(n)
-    real(kind=clreal),intent(out)::r(n)
+    real(kind=clreal),intent(out)::r(n), norm
     
     !Variables para la primera version
-    real(kind=clreal)::aux
+    real(kind=clreal)::aux, sumsqr
     integer::i,j
     real(kind=clreal),intent(in)::b(n)
     
@@ -26,6 +26,13 @@ subroutine residuosim(n,a,b,u,r)
         end do
         r(i)=aux-b(i)
     end do
-    
+
+    norm = 0.
+    sumsqr = 0.
+    do j = 1, n
+    ! norma 2
+        sumsqr = sumsqr + r(j)**2
+    end do
+    norm = sqrt(sumsqr)
     
 end subroutine residuosim
