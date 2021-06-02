@@ -1,0 +1,14 @@
+ Introduzca el orden del sistema: 
+           3
+ Introduzca la diagonal principal del sistema:
+  0.1000E+01  0.1000E+01  0.1000E+01
+ Introduzca la diagonal sub-sub-principal:
+ -0.2500E+00 -0.2500E+00 -0.2500E+00
+ Introduzca el vector B del sistema: 
+  0.2000E+02  0.2000E+02  0.2000E+02
+ Diagonal principal B
+  0.1000E+01  0.1000E+01  0.9682E+00
+ Diagonal secundaria B
+  0.0000E+00  0.0000E+00 -0.2500E+00
+ Solucion: 
+  0.2667E+02  0.2000E+02  0.2667E+02

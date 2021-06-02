@@ -11,7 +11,7 @@ real (kind = clreal), intent(in) :: a(m,n), b(m), u(n)
 real (kind = clreal), intent(out) :: r(m)
 
 integer :: i,j
-real :: aux
+real (kind = clreal):: aux
 
 ! Doble bucle sobre cada elemento
 do i = 1, m

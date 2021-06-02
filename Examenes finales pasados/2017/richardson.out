@@ -1,0 +1,26 @@
+ Introduzca el tamaño de la matriz del sistema Au = b: 
+           4
+
+ Introduzca la matriz A del sistema: 
+ A = 
+  0.5000E+01 -0.1000E+01  0.0000E+00  0.0000E+00
+ -0.1000E+01  0.5000E+01 -0.1000E+01  0.0000E+00
+  0.0000E+00 -0.1000E+01  0.5000E+01 -0.1000E+01
+  0.0000E+00  0.0000E+00 -0.1000E+01  0.5000E+01
+ Introduzca el vector b: 
+ b = 
+  0.3500E+01 -0.6500E+01  0.8000E+01 -0.1100E+02
+ Introduzca el épsilon del test de parada: 
+   1.0000000000000000E-008
+ Introduzca el número de iteracciones máximas: 
+         100
+ Introduzca el alfa del método: 
+  0.20000000000000001     
+
+ Se satisface el test de parada por epsilon tras           11  iteracciones!
+
+ Solución del sistema: 
+  0.5000E+00 -0.1000E+01  0.1000E+01 -0.2000E+01
+
+ Residuo: 
+  0.1056E-08  0.3417E-09  0.6834E-10  0.0000E+00
